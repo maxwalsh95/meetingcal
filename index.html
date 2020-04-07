@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script type='module' src='js/index.js'></script>
-  <script src="https://kit.fontawesome.com/5ab9052895.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="scss/main.css">
-  
-  <title>Document</title>
-</head>
-<body>
-  <main class="is-centered">
-    <div class="appointment-form">
-      <div class="appointment-form__row"> 
-        <label for="appointmentName" class="appointment-form__label">Appointment Title </label>
-        <input id="appointmentName" type="text" class="js-appointment-input appointment-input">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="module" src="js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5ab9052895.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/main.css" />
+
+    <title>Meetings</title>
+  </head>
+  <body>
+    <main class="is-centered">
+      <div class="appointment-form">
+        <div class="appointment-form__row">
+          <label for="appointmentName" class="appointment-form__label"
+            >Appointment Title
+          </label>
+          <input
+            id="appointmentName"
+            type="text"
+            class="js-appointment-input appointment-input"
+          />
+        </div>
+
+        <div class="appointment-form__textarea-row">
+          <label for="appointmentDetails" class="appointment-form__label"
+            >Appointment Details
+          </label>
+          <textarea
+            name="appointmentDetails"
+            id=""
+            cols="30"
+            rows="5"
+            class="js-appointment-form__details appointment-form__details"
+          ></textarea>
+        </div>
       </div>
 
-      <div class="appointment-form__textarea-row">  
-        <label for="appointmentDetails" class="appointment-form__label">Appointment Details </label>
-        <textarea name="appointmentDetails" id="" cols="30" rows="5" class="js-appointment-form__details appointment-form__details"></textarea>
-      </div>
-
-    </div>
-
-    <div class=calendar>
+      <div class="calendar">
         <div class="calendar__month-navigator">
-          <button class="js-calendar__prev-month calendar__month-navigator__button">&leftarrow;</button>
-          <button class="calendar__month js-calendar__month calendar__month-navigator__button">month</button>
-          <button class="js-calendar__next-month calendar__month-navigator__button">&rightarrow;</button>
+          <button
+            class="js-calendar__prev-month calendar__month-navigator__button"
+          >
+            &leftarrow;
+          </button>
+          <button
+            class="calendar__month js-calendar__month calendar__month-navigator__button"
+          >
+            month
+          </button>
+          <button
+            class="js-calendar__next-month calendar__month-navigator__button"
+          >
+            &rightarrow;
+          </button>
         </div>
         <table>
           <thead>
@@ -42,34 +73,40 @@
             <td>Sa</td>
             <td>Su</td>
           </thead>
-  
-          <tbody>
-            
-          </tbody>
-        </table>          
-    </div>
 
-    <div class="js-time-picker time-picker">
-      <div class="js-time-picker__hours time-picker__incrementor">
-        <button class="js-time-picker__next-hours"><span class="fas fa-angle-up"></span></button>
-        <div><span class="js-time-picker__hours-span">00</span></div>
-        <button class=js-time-picker__prev-hours><span class="fas fa-angle-down"></span></button>
+          <tbody></tbody>
+        </table>
       </div>
-      :
-      <div class="js-time-picker__minutes time-picker__incrementor">
-        <button class="js-time-picker__next-mins"><span class="fas fa-angle-up"></span></button>
-        <div><span class="js-time-picker__minutes-span">00</span></div>
-        <button class=js-time-picker__prev-mins><span class="fas fa-angle-down"></span></button>
+
+      <div class="js-time-picker time-picker">
+        <div class="js-time-picker__hours time-picker__incrementor">
+          <button class="js-time-picker__next-hours">
+            <span class="fas fa-angle-up"></span>
+          </button>
+          <div><span class="js-time-picker__hours-span">00</span></div>
+          <button class="js-time-picker__prev-hours">
+            <span class="fas fa-angle-down"></span>
+          </button>
+        </div>
+        :
+        <div class="js-time-picker__minutes time-picker__incrementor">
+          <button class="js-time-picker__next-mins">
+            <span class="fas fa-angle-up"></span>
+          </button>
+          <div><span class="js-time-picker__minutes-span">00</span></div>
+          <button class="js-time-picker__prev-mins">
+            <span class="fas fa-angle-down"></span>
+          </button>
+        </div>
       </div>
-    </div>
-    
-    <div class="mt-5px">
-      <button class="js-make-appointment-btn make-appointment-btn">make appointment</button>
-    </div>
 
-    <section class="js-appointments appointments">
+      <div class="mt-5px">
+        <button class="js-make-appointment-btn make-appointment-btn">
+          make appointment
+        </button>
+      </div>
 
-    </section>
-  </main>
-</body>
+      <section class="js-appointments appointments"></section>
+    </main>
+  </body>
 </html>
