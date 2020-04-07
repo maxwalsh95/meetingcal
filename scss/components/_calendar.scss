@@ -1,0 +1,62 @@
+.calendar {
+  width: 100%;
+  margin: 10px 0;
+  background-color: $bg-gray;
+  border-radius: $rounded-corners;
+  padding: 5px 10px;
+  
+  @include light-shadow;
+  table {
+    margin: 5px 0;
+    width: 100%;
+    border-collapse: collapse;
+    
+    thead {
+      text-align: center;
+      td {
+        padding-bottom: 10px;
+        border-bottom: thin solid shade($bg-gray, 20%);
+      }
+    }
+  }
+}
+
+.calendar__month-navigator {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px 20px 10px;
+  padding-top: 10px;
+}
+
+.calendar__month-navigator__button {
+  background-color: inherit;
+  border: none;
+
+
+}
+
+.calendar__day-btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: $bg-gray;
+  border-radius: $calendar__btn-border-radius;
+
+  &:hover {
+    cursor: pointer;
+    background-color: shade($bg-gray, 20%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px shade($pale-orange, 10%);
+  }
+}
+
+.calendar__day-btn--selected {
+  background-color: $pale-orange;
+
+  &:hover {
+    background-color: shade($pale-orange, 10%);
+  }
+}

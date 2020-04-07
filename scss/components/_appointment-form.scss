@@ -1,0 +1,46 @@
+.appointment-form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.appointment-input {
+  margin-left: 10px;
+  flex-grow: 1;
+  border: none;
+  border-bottom: 2px solid #adadad;
+  &:focus {
+    outline: none;
+    border-bottom-color: $pale-orange;
+  }
+}
+
+.appointment-form__label {
+  font-weight: bold;
+}
+
+.appointment-form__row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.appointment-form__textarea-row {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  label {
+    margin-bottom: 5px;
+  }
+}
+
+.appointment-form__details{
+  border: 2px solid #adadad;
+
+  &:focus {
+    border-color: $pale-orange;
+    outline: none;
+  }
+}

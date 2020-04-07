@@ -1,0 +1,28 @@
+.make-appointment-btn {
+  padding: 5px 10px;
+  font-size: 20px;
+
+  color: $dark-text;
+  background-color: $rich-red;
+  border: none;
+  border-radius: 5px;
+
+  box-shadow: 0 4px 0 0 shade($rich-red, 30%);
+
+  transition: background-color 0.1s;
+
+  &:hover {
+    background-color: shade($rich-red, 10%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: 0 1px 0 0 hade($rich-red,30%);
+    background-color: shade($rich-red, 30%);
+    transform: translateY(2px);
+  }
+}
